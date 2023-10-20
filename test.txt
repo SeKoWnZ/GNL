@@ -1,0 +1,7 @@
+El sistema de juego de la tercera edición de Shadowrun sólo usa dados de 6 caras.
+Está basado en habilidades, no en clases, aunque el manual
+ presenta varios arquetipos como muestra de lo que se puede tener.
+
+Todo situación en el juego que se defina por dados se hace,
+ primero dándole una dificultad de entre 3 (rutinarias y simples),
+  y pocas veces más de 12 (casi-imposibles) a la tirada.
