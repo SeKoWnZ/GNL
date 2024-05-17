@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jose-gon <jose-gon@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/11 17:45:11 by jose-gon          #+#    #+#             */
-/*   Updated: 2023/11/13 18:20:05 by jose-gon         ###   ########.fr       */
+/*   Updated: 2023/10/31 13:23:40 by jose-gon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 static void	ft_free_willy(char	**stash)
 {
@@ -74,25 +74,25 @@ static void	ft_get_da_line(char **stash, char **line)
 
 char	*get_next_line(int fd)
 {
-	static char		*stash;
+	static char		*stash[4096];
 	char			*line;
 	int				nread;
 
 	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, &line, 0) < 0)
 	{
-		if (stash != NULL)
-			ft_free_willy(&stash);
+		if (stash[fd] != NULL)
+			ft_free_willy(&stash[fd]);
 		return (NULL);
 	}
 	line = NULL;
 	nread = 1;
-	ft_read_and_stash(fd, &stash, nread);
-	if (stash == NULL)
+	ft_read_and_stash(fd, &stash[fd], nread);
+	if (stash[fd] == NULL)
 		return (NULL);
-	ft_get_da_line(&stash, &line);
+	ft_get_da_line(&stash[fd], &line);
 	if (line[0] == '\0')
 	{
-		ft_free_willy(&stash);
+		ft_free_willy(&stash[fd]);
 		free(line);
 		return (NULL);
 	}

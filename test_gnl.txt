@@ -1,0 +1,11 @@
+El sistema de juego de la tercera edición de Shadowrun sólo usa dados de 6 caras.
+Está basado en habilidades, no en clases, aunque el manual presenta varios arquetipos como muestra de lo que se puede tener.
+
+Todo situación en el juego que se defina por dados se hace primero dándole una dificultad de entre 3 (rutinarias y simples)
+ y pocas veces más de 12 (casi-imposibles) a la tirada, luego tirando una cantidad de dados igual a la puntuación que el personaje tenga en la/s habilidad/es.
+   Cada dado que iguale o supere la dificultad es un éxito, si en una tirada solo hay 1 y ningún éxito, se considera fracaso. los 1 no cancelan éxitos.
+ Ciertas acciones muy difíciles pueden exigir más de un éxito. Un 6 en un dado permite volver a tirar el dado y sumar el número, pudiendo superar un 6.
+
+Dentro de los detractores del juego la queja más común es que los personajes se especializan en una acción y son inútiles en lo demás.
+ En realidad tanto la creación como crecimiento del PJ son completamente libres, y suelen mejorar en otros campos ya que resulta más caro mejorar una
+habilidad en 5 o 6 que una en 1 o 2.
